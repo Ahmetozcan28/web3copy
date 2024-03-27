@@ -3,11 +3,9 @@ import { FaPeopleRobbery } from "react-icons/fa6";
 import { FaGamepad } from "react-icons/fa6";
 import { FaHandsHelping } from "react-icons/fa";
 import { FaBrain } from "react-icons/fa6";
-import { Controller, Scene } from "react-scrollmagic";
 export default function HelpStepsHub() {
   return (
-    <Controller>
-      <Scene duration={600} triggerHook="onEnter">
+   
             <div className=" container mx-auto mb-16">
               <div className="grid grid-cols-4 text-white">
                 <div>
@@ -76,7 +74,6 @@ export default function HelpStepsHub() {
                 </div>
               </div>
             </div>
-      </Scene>
-    </Controller>
+
   );
 }
