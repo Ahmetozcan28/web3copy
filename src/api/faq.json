@@ -1,0 +1,17 @@
+[
+  {
+    "id": "0",
+    "questions": "WHAT IS HSX TOKEN AND HOW TO EARN IT?",
+    "answers": "HSX is a crypto token system used on the HelpSteps platform. Users can earn HSX tokens by trading their steps or completing special tasks."
+  },
+  {
+    "id": "1",
+    "questions": "What blockchain is HelpSteps’s token built on?",
+    "answers": "Binance Smart Chain"
+  },
+  {
+    "id": "2",
+    "questions": "What is the maximum supply of HelpSteps's Token?",
+    "answers": "1,000,000,000 "
+  }
+]

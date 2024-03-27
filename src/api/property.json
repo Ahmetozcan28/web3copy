@@ -1,0 +1,36 @@
+[
+  {
+    "id": 0,
+    "title": "STEPS MODE",
+    "mdtitle": "#Move to Earn",
+    "image": "https://helpsteps.io/assets/img/steps_bg.png"
+  },
+  {
+    "id": 1,
+    "title": "SOCIAL",
+    "mdtitle": "#Together",
+    "image": "https://helpsteps.io/assets/img/groups_bg.png"
+
+  },
+  {
+    "id": 2,
+    "title": "CHARITY",
+    "mdtitle": "#Donations",
+    "image": "https://helpsteps.io/assets/img/campaign_bg.png"
+
+  },
+  {
+    "id": 3,
+    "title": "FANSTEPS",
+    "mdtitle": "#Passionate",
+    "image": "https://helpsteps.io/assets/img/clubs_bg.png"
+
+  },
+  {
+    "id": 4,
+    "title": "COMMUNITIES",
+    "mdtitle": "#Say 'Hi' to new groups! ",
+    "image": "https://helpsteps.io/assets/img/lasthsx.png"
+
+  }
+]
