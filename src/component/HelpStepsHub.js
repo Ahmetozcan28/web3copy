@@ -3,10 +3,13 @@ import { FaPeopleRobbery } from "react-icons/fa6";
 import { FaGamepad } from "react-icons/fa6";
 import { FaHandsHelping } from "react-icons/fa";
 import { FaBrain } from "react-icons/fa6";
+import useScrollY from "custom-hook/useScrollY";
 export default function HelpStepsHub() {
+  const scrollY = useScrollY(); 
+  console.log(scrollY)
   return (
    
-            <div className=" container mx-auto mb-16">
+            <div className={` container mx-auto mb-16 duration-700 transition ${scrollY > 1600 ? "opacity-100 translate-x-0 translate-y-0" : "opacity-0 translate-x-16 -translate-y-16"}`}>
               <div className="grid grid-cols-4 text-white">
                 <div>
                   <div className=" w-16 h-16 border border-left-gradient grid place-items-center rounded-xl shadow-box-green bg-text-span">

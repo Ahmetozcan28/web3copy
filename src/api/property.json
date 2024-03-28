@@ -3,34 +3,40 @@
     "id": 0,
     "title": "STEPS MODE",
     "mdtitle": "#Move to Earn",
-    "image": "https://helpsteps.io/assets/img/steps_bg.png"
+    "image": "https://helpsteps.io/assets/img/steps_bg.png",
+    "scrollTitle": 2459,
+    "scrollApp": 2259
   },
   {
     "id": 1,
     "title": "SOCIAL",
     "mdtitle": "#Together",
-    "image": "https://helpsteps.io/assets/img/groups_bg.png"
-
+    "image": "https://helpsteps.io/assets/img/groups_bg.png",
+    "scrollTitle": 3176,
+    "scrollApp": 2959
   },
   {
     "id": 2,
     "title": "CHARITY",
     "mdtitle": "#Donations",
-    "image": "https://helpsteps.io/assets/img/campaign_bg.png"
-
+    "image": "https://helpsteps.io/assets/img/campaign_bg.png",
+    "scrollTitle": 3876,
+    "scrollApp": 3676
   },
   {
     "id": 3,
     "title": "FANSTEPS",
     "mdtitle": "#Passionate",
-    "image": "https://helpsteps.io/assets/img/clubs_bg.png"
-
+    "image": "https://helpsteps.io/assets/img/clubs_bg.png",
+    "scrollTitle": 4550,
+    "scrollApp": 4300
   },
   {
     "id": 4,
     "title": "COMMUNITIES",
     "mdtitle": "#Say 'Hi' to new groups! ",
-    "image": "https://helpsteps.io/assets/img/lasthsx.png"
-
+    "image": "https://helpsteps.io/assets/img/lasthsx.png",
+    "scrollTitle": 5304,
+    "scrollApp": 5090
   }
 ]

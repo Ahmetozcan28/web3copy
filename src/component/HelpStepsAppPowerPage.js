@@ -4,16 +4,22 @@ import { ReactComponent as Star } from "helpsteps-svg/star.svg";
 import { ReactComponent as GradientLeft } from "helpsteps-svg/gradient-left.svg";
 import { ReactComponent as Ring } from "helpsteps-svg/ring.svg";
 import { ReactComponent as MobileGradient } from "helpsteps-svg/mobileGradient.svg";
+import useScrollY from "custom-hook/useScrollY";
 import property from "api/property.json";
 export default function HelpStepsAppPowerPage() {
   const [propertyHelp, setPropertyHelp] = useState([]);
-
+  const scrollY = useScrollY();
   useEffect(() => {
     setPropertyHelp(property);
   });
+  // ${scrollY > 1600 ? "opacity-100 translate-x-0 translate-y-0" : "opacity-0 translate-x-16 -translate-y-16"}
   return (
     <div className="container mx-auto mb-16">
-      <header className="text-center relative mb-16">
+      <header
+        className={`text-center relative mb-16 duration-700 ${
+          scrollY > 2000 ? "opacity-100 " : "opacity-0"
+        }`}
+      >
         <h1 className=" text-power tracking-wider text-9xl relative flex items-center justify-center text-nowrap">
           POWER IS HERE
           <h1 className="text-6xl tracking-tight font-bold drop-shadow-drop-green bg-gradient-to-r from-left-gradient to-right-gradient inline-block text-transparent bg-clip-text absolute text-nowrap">
@@ -35,7 +41,13 @@ export default function HelpStepsAppPowerPage() {
                     {property.mdtitle}
                   </h6>
                   <div className="relative">
-                    <h1 className="text-7xl  font-bold bg-gradient-to-r drop-shadow-drop-green from-left-gradient to-right-gradient inline-block text-transparent bg-clip-text">
+                    <h1 
+                      className={`${
+                        scrollY > property.scrollTitle
+                          ? "opacity-100 translate-x-0 "
+                          :`opacity-0 ${property.id % 2 === 0 ? "translate-x-16" : "-translate-x-16"}`
+                      } duration-700  text-7xl  font-bold bg-gradient-to-r drop-shadow-drop-green from-left-gradient to-right-gradient inline-block text-transparent bg-clip-text`}
+                    >
                       {property.title}
                     </h1>
                     <div className="w-4 flex h-4 rounded-full bg-dart shadow-dart-sh top-5 absolute  -left-2"></div>
@@ -53,7 +65,7 @@ export default function HelpStepsAppPowerPage() {
                 </div>
               </div>
               <div className="relative  flex items-center justify-center text-center">
-                <img className="z-10" src={property.image} />
+                <img className={`z-10 duration-700 ${scrollY > property.scrollApp ? " opacity-100 translate-y-0" : "opacity-0 translate-y-16"}`} src={property.image} />
                 <div className="absolute overflow-hidden">
                   <Ring />
                 </div>
